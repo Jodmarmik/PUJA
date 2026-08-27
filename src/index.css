@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-input {
+    @apply w-full bg-[#141414] text-white rounded-md px-3 py-2.5 outline-none border border-white/10 focus:border-red-600 transition text-sm;
+  }
+}
+
+body {
+  background-color: #141414;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
